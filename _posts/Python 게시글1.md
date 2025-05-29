@@ -1,7 +1,3 @@
----
-layout: post
-title: "Pyhthon 문제풀이1"
---- 
 # 문제
 ### 학생 이름과 점수가 담긴 딕셔너리 scores가 주어질 때, 가장 점수가 높은 학생의 이름을 return 하도록 solution 함수를 완성하세요.
 
