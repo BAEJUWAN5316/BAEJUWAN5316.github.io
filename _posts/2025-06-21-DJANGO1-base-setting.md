@@ -113,6 +113,7 @@ path('chat/', include('chat.urls'))넣어주기
 - 사용자에게 보여줄 html 파일 생성과 장고서버를 연결시켜주기
 앱 폴더인 [chat]에 커서를 클릭하고 새파일 생성을 누른다.
 [templates/chat/index.html] 이라고 써서 새 파일을 만들어준다.
+
 ```python
 # chat.views.py
 from django.http import HttpRequest, HttpResponse # add
@@ -123,6 +124,7 @@ def index(request: HttpRequest) -> HttpResponse: # add
       "chat/index.html" # 보이게 해줄 html파일 이름
       )
 ```
+
 chat.views.py파일에 들어가서 제일 상단에
 [from django.http import HttpRequest, HttpResponse] 이거를 추가해주자
 그리고 위와같이 함수를 작성하면 [index]라는 함수 이름으로 index.html파일이 연결된다.
