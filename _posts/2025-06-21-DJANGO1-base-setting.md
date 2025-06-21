@@ -91,6 +91,7 @@ config/settings.py에 들어가서
 > 앱 chat폴더가 메인 장고와 연동 완료
 
 - 앱 chat의 url(엔드포인트) 연동시키기
+
 ```python
 # config.urls.py
 from django.contrib import admin
@@ -101,6 +102,7 @@ urlpatterns = [
     path('chat/', include('chat.urls')) #add
 ]
 ```
+
 config/urls.py 파일에 들어가기
 [from django.urls import path] 여기뒤에 include 추가해서
 [from django.urls import path, include] 이렇게 만들어주고,
@@ -127,6 +129,7 @@ chat.views.py파일에 들어가서 제일 상단에
 
 - html파일의 엔드포인트 지정하기
 chat/urls.py 라는 파일을 만들어준다.
+
 ```python
 #chat/urls.py
 from django.urls import path
@@ -136,6 +139,7 @@ urlpatterns = [
     path("", views.index),
 ]
 ```
+
 해당 파일 안에 위와 같이 작성해준다.
 ""이건 빈 엔드포인트, 즉 기본 엔드포인트인 [/chat]으로 보여주겠다는 뜻이다.
 만약 "hello/"라고 쓴다면 [/chat/hello/] 의 엔드포인트로 접속가능해진다.
